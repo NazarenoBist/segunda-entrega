@@ -48,14 +48,15 @@
     position: relative;
     }
     
+    /* SASS*/
     
-    nav{
+    .nav{
         display: grid;
         grid-template-columns: repeat(5, 1%);
         justify-content: space-around;
         padding: 30px 50px 0px 0px;
-    }
-    nav a{
+    
+    a{
         color: #000 ;
         font-weight: 300;
         text-decoration: none;
@@ -64,9 +65,12 @@
         width: 100px;
     }
     
-    nav a:hover{
+    a:hover{
         text-decoration: underline; 
     }
+}
+
+    
     
     .text-header{
         display:flex;
