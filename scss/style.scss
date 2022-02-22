@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     }
+
     body{
         font-family: 'open sans';
     }
+
     .container{
     padding: 60px 0px;
     width: 90%;
@@ -50,13 +52,13 @@
     
     /* SASS*/
     
-    .nav{
-        display: grid;
-        grid-template-columns: repeat(5, 1%);
-        justify-content: space-around;
-        padding: 30px 50px 0px 0px;
-    
-    a{
+nav{
+    display: grid;
+    grid-template-columns: repeat(5, 1%);
+    justify-content: space-around;
+    padding: 30px 50px 0px 0px;
+
+     a{
         color: #000 ;
         font-weight: 300;
         text-decoration: none;
@@ -64,11 +66,14 @@
         margin-right: 10px;
         width: 100px;
     }
-    
     a:hover{
         text-decoration: underline; 
+        color: #003566;
+        
     }
 }
+
+
 
     
     
