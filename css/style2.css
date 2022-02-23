@@ -409,6 +409,14 @@ footer {
   color: #003566;
   text-decoration: none; }
 
+.dropdown-menu {
+  background-color: transparent;
+  border: transparent; }
+  .dropdown-menu .dropdown-divider {
+    width: 100px; }
+  .dropdown-menu .dropdown-item {
+    background-color: transparent; }
+
 /* ANIMACIONES */
 nav {
   animation-duration: 2s;

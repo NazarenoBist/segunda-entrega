@@ -519,6 +519,18 @@ nav{
             color: #003566;
             text-decoration: none
          }
+
+
+    .dropdown-menu{ background-color: transparent;
+        border: transparent;
+       .dropdown-divider{
+           width: 100px;
+           
+       }
+        .dropdown-item{
+             background-color: transparent;
+         }
+        }
     
     /* ANIMACIONES */ 
     
