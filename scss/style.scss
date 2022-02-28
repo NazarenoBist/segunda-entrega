@@ -1,3 +1,10 @@
+@import "variables";
+@import "footer";
+/* MIX IN */
+
+@mixin bold {
+    font-weight: bold;
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +24,7 @@
     }
     
     .tittle{
+    @include bold;
     color:#003566;
     font-size: 30px;
     text-align: center;
@@ -108,7 +116,7 @@ nav{
     /* MAIN  */
     
     
-    /*  CONTAINER ABOUT US*/
+    /* OUR PRODUCTS  */
     
     
     .container-about-us2{
@@ -131,7 +139,7 @@ nav{
     }
     
     
-    .container-about-us2 .container-text h3 span{
+   .span-ourproducts{
         background: #4d0686;
         color: #fff;
         border-radius: 50%;
@@ -143,7 +151,20 @@ nav{
         padding: 2px;
         box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.733);
     }
-    
+
+    /* EXTEND */
+
+    .span-ourproducts2{
+    @extend .span-ourproducts;
+    }
+
+    .span-ourproducts3{
+        @extend .span-ourproducts;
+    }
+
+
+    /* FIN EXTEND*/
+
     .container-text p{
         padding: 0px 0px 30px 15px;
         font-weight: 400;
@@ -155,7 +176,7 @@ nav{
     
     .container-information{
         
-         background: #d6d5d572;
+         background: $section-backgroundcolor;
          margin-bottom: 100px;
          padding-top: 30px;
          padding-bottom: 50px;
@@ -340,11 +361,11 @@ nav{
         /* FOOTER */
     
     footer{
-           background: #41414143;
+           background: $footer-color;
            padding: 60px 0 30px;
            margin: auto;     
        } 
-       /* GRIDS */
+
     .container-footer{
         display: grid;
         grid-template-columns: 23% 23% 23%;
@@ -360,7 +381,7 @@ nav{
     }
     
     .content-footer h4{
-        color: #003566;
+        color: map-get($map-color , azul );
         border-bottom: 3px solid #5e5b61;
         padding-bottom: 5px;
         margin-bottom: 20px;
