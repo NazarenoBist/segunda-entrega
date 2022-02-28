@@ -1,0 +1,17 @@
+Procedo a comentar los cambios realizados en el proyecto tomando como referencia lo dado en las clases:
+
+1) El proyecto tiene agregado los nuevo metas:
+
+A)<meta name="description" content="Rent in Gualeguaychu,you will find a place where you can stay.Enter and discover our incredible offers and promotions.Discovered the best way to rent">
+B)<meta name="keywords"  content="GUALEGUAYCHU, RENT, VACATIONS, OFFERS, HOTEL, APARTMENT">
+
+A) Esto nos ayuda a nuestro SEO puesto que, en la meta description le anticipamos al usuario(adaptado al idioma inglés) una descripción clara de lo que va a poder descubrir en nuestra página web.
+B) Esto nos ayuda a nuestro SEO puesto que, en la meta keywords le proporcionamos al usuario palabras claves que a nuestro entender, se encuentran vinculadas con nuestros servicios.
+
+
+2)El proyecto cuenta con un total de 5 páginas HTML. Veremos en ellas solamente un <H1> por página. El <h1> referencia el tema desarrollado en la página que está navegando el usuario
+
+
+
+3) El proyecto a su vez, teniendo presente la cantidad de MB que podrá soportar un host gratuito, se procedió a comprimir las imágenes para que la navegación por la página web sea mas ágil y dinámica.
+Créandose al efecto una carpeta llamada Imagenes Comprimidas.
