@@ -17,7 +17,7 @@
 
     .container{
     padding: 60px 0px;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin:auto;
     overflow: hidden;
@@ -80,10 +80,6 @@ nav{
         
     }
 }
-
-
-
-    
     
     .text-header{
         display:flex;
@@ -110,7 +106,6 @@ nav{
     bottom: 0;
     width: 100%;
     }
-    
     
     
     /* MAIN  */
@@ -345,17 +340,45 @@ nav{
     
        
         .rent-here{
-            background-color: #f2f2f2;
+            background: $section-backgroundcolor;
             margin-top: 100px;
             margin-bottom: 100px;
             padding-top: 50px;
             padding-bottom: 50px;
+            width: 99%;
+                
+        }
+
+        .container-rent-here{
+            justify-self: center;
+
         }
     
-    
         .picture2-rent-here{
-            width: 350px;
-            height: 350px;
+            margin-left: 30px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .row {
+            h4{
+                border: 4px solid $section-backgroundcolor;
+                border-radius: auto;
+                box-shadow: 2px 4px 10px $section-backgroundcolor
+            }
+            p{
+                border: 4px solid $section-backgroundcolor;
+                border-radius: auto;
+                box-shadow: 2px 4px 10px $section-backgroundcolor
+            }
+            .cash{
+                border: 4px solid $section-backgroundcolor;
+                border-radius: auto;
+                box-shadow: 2px 4px 10px $section-backgroundcolor
+            }
+            .btn{
+                margin-left: 100px;
+            }
         }
     
         /* FOOTER */
@@ -369,7 +392,7 @@ nav{
     .container-footer{
         display: grid;
         grid-template-columns: 23% 23% 23%;
-        width: 90%;
+        width: 100%;
         justify-content: space-evenly;
         margin: auto;
         padding-bottom: 50px;
@@ -409,9 +432,9 @@ nav{
         background-color: #4e4d4d4d;
         margin: auto;
         margin-top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         box-shadow: 7px 13px 27px #000;
-        padding: 40px ;
+        padding: 40px;
         border-top: 4px solid #003566;
         border-bottom: 4px solid #003566;
         }
@@ -587,7 +610,21 @@ nav{
     /* MEDIA QUERIES  MOBILE */
     
     @media screen and (max-width: 400px) {
-        
+
+        .text-center{
+            width: 55%;
+            text-align: center;
+            padding: 0 0 0 80px;
+        }
+
+        .container{
+            padding: 60px 0px;
+            width: 100%;
+            max-width: 400px;
+            margin:auto;
+            overflow: hidden;
+            }
+       
         nav{ 
         width: 55%;
         text-align: center;
@@ -613,6 +650,7 @@ nav{
             margin-bottom: 10px;
         }
     
+        /* AOBOUT - US */ 
         .container-about-us2 img{
             margin-bottom: 40px;
             width: 49%;
@@ -630,7 +668,25 @@ nav{
             color: #d8d5d5;
         }
     
+        /* RENT - HERE */
+             
+        .rent-here{
+            width:95%;
+            margin-left: 5px;
+        }
+
+        .carousel-item .picture2-rent-here{
+            margin-left: 50px; 
+            width: 200px;
+            height: 200px;
+          }
+
+          .btn{
+              margin-bottom: 90px;
+          }
         
+
+
         /* PORTFOLIO*/
     
     
@@ -674,11 +730,21 @@ nav{
             height: 100%;
            
         }
+
+        .picture2-rent-here{
+            width: 50%;
+            height: 50%;
+        }
         
         /* FOOTER */
         .container-footer{
-        grid-template-columns: repeat(3, 30%); 
-        border: none;
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding-bottom: 50px;
+           
         }
         
         .content-footer{
@@ -686,13 +752,12 @@ nav{
         }
         
         .content-footer h4{
-            border: none;
+            border-bottom: 1px solid 50% #5e5b61;
             font-size: 12px;
         }
         
         .content-footer p{
             width: auto;
-            border-bottom: 1px solid #5e5b61    ;
             margin-bottom: 20px;
             margin-right: 20px;
             font-size: 12px;
@@ -704,6 +769,10 @@ nav{
         width: 90%;
     }
     
+    /* CONTACT */
+    .file2{
+        width: 90%;
+    }
     
     /* REGISTER */
     
@@ -738,6 +807,7 @@ nav{
     @media screen and (min-width: 400px) and (max-width:500px)
     {
         
+        
         nav{ 
         width: 70%;
         text-align: center;
@@ -766,6 +836,58 @@ nav{
         .registrar{
             width: 70%;
             padding:0px
+        }
+        
+        /* ABOUT - US */ 
+
+        .bajar{
+            margin-left: 40px;
+            width: 80%;
+            height: 80%;
+        }
+        
+        .bajar2{
+            text-align:center;
+            color: #d8d5d5;
+        }
+        
+        
+        /* CONTACT */
+    
+    .form-contact{
+        width: 90%;
+        height: 100%;
+    }
+    
+          .file2{
+        width: 90%;
+         }
+
+         /* FOOTER */
+        .container-footer{
+            display: grid;
+            grid-template-columns: 60%;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            padding-bottom: 50px;
+           
+        }
+        
+        .content-footer{
+            margin-bottom: 20px;
+        }
+        
+        .content-footer h4{
+            border-bottom: 1px solid 50% #5e5b61;
+            font-size: 12px;
+        }
+        
+        .content-footer p{
+            width: auto;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            font-size: 12px;
         }
     
        
@@ -843,10 +965,32 @@ nav{
     
     /* FOOTER*/
     
+    /* FOOTER */
     .container-footer{
-        width: 100%;
+        display: grid;
+        grid-template-columns: 60%;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 50px;
+       
     }
     
+    .content-footer{
+        margin-bottom: 20px;
+    }
+    
+    .content-footer h4{
+        border-bottom: 1px solid 50% #5e5b61;
+        font-size: 12px;
+    }
+    
+    .content-footer p{
+        width: auto;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        font-size: 12px;
+    }
     }
     
     
