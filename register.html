@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-              <img src="./Imagenes/logo3.jpg.png" alt="" width="50px">
+              <img src="./imagenes-comprimidas/logo3.jpg.png" alt="" width="50px">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -63,8 +63,9 @@
         </section>
     </header>
     <main>
+        <div class="register2">
+            <h2 class="tittle"> Register</h2>
         <section class="reg-in"> <br>
-            <h5>Register</h5>
             <form action="/folder.php" method="POST"> <br>
                     <input class="bottom-register" type="text" name="nombre" value="" id="nombre" placeholder="Nombre"
                         required>
@@ -84,29 +85,32 @@
                         placeholder="Piso">
                     <input class="bottom-register" type="text" name="depto-domicilio" value="" id="depto-domicilio"
                         placeholder="Depto"> <br>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Registrarse
+                        <div class="button-register">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Register
                           </button>
+                        </div> <br>
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Almost Done</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Check your email, we sent you a message!
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                 </div>
             </form>
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Almost Done</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Check your email, we sent you a message!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
+           
         
         <section class="container-about-us">
             <h2 class="tittle">Our Products</h2>
@@ -220,7 +224,7 @@
                     </div>
 
                     <div class="img-port">
-                        <img src="../segunda-entrega/Imagenes/field.jpg">
+                        <img src="../segunda-entrega/imagenes-comprimidas/field.jpg">
                         <div class="hover-gallery">
                             <img src="../segunda-entrega/imagenes-comprimidas/whatsapp.jpg  ">
                             <p> RENTED</p>
@@ -298,8 +302,9 @@
         </div>
         <div class="content-footer">
             <h4>Location</h4>
-            <p> Gualeguaychu</p>
+            <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.8451570711413!2d-58.51056378510632!3d-33.00785758231888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa82b29899e49%3A0x295cdd08d1833808!2sLuis%20N.%20Palma%20400%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1sen!2sar!4v1646834745273!5m2!1sen!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
         </div>
+
 
     </div>
     <h2 class="final-tittle">&copy;  Guale4rent S.A. | 2022 Argentina - Todos los derechos reservados.
