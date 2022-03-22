@@ -79,21 +79,20 @@ nav {
   bottom: 0;
   width: 100%; }
 
-/* MAIN  */
 /* OUR PRODUCTS  */
-.container-about-us2 {
+.container-our-products2 {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 90px; }
 
-.container-about-us2 img {
+.container-our-products2 img {
   width: 40%;
   height: 50%; }
 
-.img-about-us {
+.img-our-products {
   width: 48%; }
 
-.container-about-us2 .container-text h3 {
+.container-our-products2 .container-text h3 {
   margin-bottom: 15px; }
 
 .container-text p {
@@ -118,22 +117,53 @@ nav {
   font-weight: 400;
   text-align: justify; }
 
-/* CONTAIENR - INFORMATION*/
-.container-information {
+/* CONTAIENR - ABOUT -US*/
+.container-about-us {
   background: #d6d5d572;
   margin-bottom: 100px;
   padding-top: 30px;
   padding-bottom: 50px; }
 
-.bajar {
-  margin-left: 80px;
+.img-about-us {
+  margin-left: 140px;
   width: 80%;
   height: 80%; }
 
-.bajar2 {
+.text-about-us {
   text-align: center;
   color: #d8d5d5; }
 
+.container-about-us2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 90px; }
+
+.container-about-us2 img {
+  width: 40%;
+  height: 50%; }
+
+.img-about-us2 {
+  width: 40%; }
+
+.container-about-us2 .container-text h3 {
+  margin-bottom: 15px; }
+
+.container-text p {
+  width: 90%; }
+
+.span-about-us, .span-about-us2, .span-about-us3 {
+  background: #003566;
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: repeat();
+  text-align: center;
+  width: 5%;
+  height: 5%;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.733); }
+
+/* EXTEND */
 /* PORTFOLIO */
 .portfolio {
   background: #f2f2f2; }
@@ -220,7 +250,7 @@ nav {
 
 /* OUR  SERVICES */
 .about-services {
-  background: #f2f2f2;
+  background: #d6d5d572;
   padding-bottom: 30px; }
 
 .service-container {
@@ -332,16 +362,23 @@ footer {
   padding: 40px 0 40px 0;
   margin-top: 40px;
   margin-bottom: 40px; }
+  .contact2 .form-contact {
+    width: 500px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 30px;
+    border-top: 4px solid #003566;
+    border-bottom: 4px solid #003566; }
 
-.form-contact {
-  width: 500px;
-  height: 750px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 80px;
-  padding: 40px;
-  border-top: 4px solid #003566;
-  border-bottom: 4px solid #003566; }
+.bottom-contact {
+  width: 100%;
+  border: 1px solid #003566;
+  margin-bottom: 5px;
+  padding: 6px 3px; }
 
 .form-contact h3 {
   margin: 0;
@@ -349,11 +386,6 @@ footer {
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 30px; }
-
-.bottom-contact {
-  width: 100%;
-  border: 1px solid #003566;
-  padding: 6px 3px; }
 
 /* LOG-IN */
 .log-in2 {
@@ -402,7 +434,6 @@ footer {
   margin-bottom: 30px; }
 
 /* REGISTER */
-/* GRIDS */
 .register2 {
   background-color: #d6d5d572;
   margin: 80px 0 80px 0;
@@ -487,6 +518,7 @@ nav {
 
 /* MEDIA QUERIES  MOBILE */
 @media screen and (max-width: 400px) {
+  /* H1 - Portada*/
   .text-center {
     width: 55%;
     text-align: center;
@@ -497,15 +529,6 @@ nav {
     max-width: 400px;
     margin: auto;
     overflow: hidden; }
-  nav {
-    width: 55%;
-    text-align: center;
-    padding: 30px 0 0 0; }
-  nav a {
-    display: grid;
-    grid-template-columns: repeat(5, 5%);
-    column-gap: 5px;
-    font-size: 12px; }
   .text-header h1 {
     font-size: 25px;
     margin-right: 220px;
@@ -514,46 +537,56 @@ nav {
     font-size: 25px;
     margin-right: 180px;
     margin-bottom: 10px; }
-  /* AOBOUT - US */
-  .container-about-us2 img {
+  /* NAV*/
+  nav {
+    width: 81%;
+    position: sticky;
+    padding-bottom: 30px; }
+  nav a {
+    display: grid;
+    grid-template-columns: repeat(5, 5%);
+    column-gap: 5px;
+    font-size: 12px; }
+  .navbar-toggler-icon {
+    color: #003566; }
+  /* OUR - PRODUCTS */
+  .container-our-products2 img {
     margin-bottom: 40px;
     width: 49%; }
-  .container-about-us2 .container-text {
+  .container-our-products2 .container-text {
     width: 100%; }
-  .container-information .bajar {
-    margin-left: 40px; }
-  .bajar2 {
-    text-align: center;
-    color: #d8d5d5; }
-  /* OUR PRODUCTS*/
   .span-ourproducts, .span-ourproducts2, .span-ourproducts3 {
     height: 10%;
     width: 10%; }
-  /* RENT - HERE */
-  .rent-here {
-    width: 95%;
-    margin-left: 5px; }
-  .carousel-item .picture2-rent-here {
-    margin-left: 50px;
-    width: 200px;
-    height: 200px; }
-  .carouselExampleControls2 .btn {
-    margin-bottom: 90px; }
+  /*ABOUT - US*/
+  .container-about-us .img-about-us {
+    margin-left: 31px; }
+  .span-about-us, .span-about-us2, .span-about-us3 {
+    width: 15%;
+    height: 10%; }
+  .container-about-us2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container-about-us2 .container-text {
+    width: 90%; }
+  .container-about-us2 img {
+    margin-bottom: 25px; }
   /* PORTFOLIO*/
   .gallery-port {
     margin: 0;
-    width: 800px;
+    width: 700px;
     height: 400px; }
   .img-port {
     width: 100%;
-    margin-left: 20px; }
+    margin-right: 25px; }
   .img-port img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block; }
-  /* CLIENTS */
-  .cards .card {
+  /* CLIENTS - What do our costumers say */
+  .cards .cards .card {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -564,9 +597,6 @@ nav {
     margin-top: 8px; }
   .cards .card p {
     height: 100%; }
-  .picture2-rent-here {
-    width: 50%;
-    height: 50%; }
   /* FOOTER */
   .container-footer {
     display: grid;
@@ -585,12 +615,29 @@ nav {
     margin-bottom: 20px;
     margin-right: 20px;
     font-size: 12px; }
+  /* RENT - HERE */
+  .rent-here {
+    width: 92%;
+    margin-left: 12px; }
+  .carousel-item .picture2-rent-here {
+    margin-left: 50px;
+    width: 200px;
+    height: 200px; }
+  .row .btn {
+    margin-left: 85px;
+    margin-bottom: 40px; }
+  .picture2-rent-here {
+    width: 50%;
+    height: 50%; }
   /* LOG- IN */
   .log-in {
     width: 90%; }
   /* CONTACT */
   .file2 {
     width: 90%; }
+  .contact2 .form-contact {
+    width: 90%;
+    height: 100%; }
   /* REGISTER */
   .reg-in {
     width: 90%;
@@ -599,55 +646,58 @@ nav {
     animation-name: reg-in; }
   .bottom-register {
     width: 90%;
-    padding: 1px; }
-  /* CONTACT */
-  .form-contact {
-    width: 90%;
-    height: 100%; } }
+    padding: 1px; } }
 
 /* MEDIA QUERIES  MOBILE - AGAIN - */
 @media screen and (min-width: 400px) and (max-width: 500px) {
-  nav {
-    width: 70%;
+  /* H1 - Portada*/
+  .text-center {
+    width: 55%;
     text-align: center;
-    padding: 30px 0 0 0; }
-  nav a {
-    display: flex;
-    grid-template-columns: repeat(5, 5%);
-    column-gap: 5px;
-    font-size: 12px; }
+    padding: 0 0 0 80px; }
+  .container {
+    padding: 60px 0px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden; }
   .text-header h1 {
     font-size: 25px;
-    margin-right: 125px;
+    margin-right: 220px;
     margin-bottom: 100px; }
   .text-header h2 {
     font-size: 25px;
     margin-right: 180px;
     margin-bottom: 10px; }
-  .registrar {
-    width: 70%;
-    padding: 0px; }
+  /* NAV*/
+  nav {
+    width: 100%;
+    position: sticky;
+    padding-bottom: 30px;
+    margin-bottom: 10px; }
+  nav a {
+    display: grid;
+    grid-template-columns: repeat(5, 5%);
+    column-gap: 5px;
+    font-size: 12px; }
+  .navbar-toggler-icon {
+    color: #003566; }
+  /* CONTACT */
+  .contact2 .form-contact {
+    width: 90%;
+    height: 100%; }
   /* ABOUT - US */
-  .bajar {
+  .carousel-item .img-about-us {
     margin-left: 40px;
     width: 80%;
     height: 80%; }
-  .bajar2 {
-    text-align: center;
-    color: #d8d5d5; }
-  /* CONTACT */
-  .form-contact {
-    width: 90%;
-    height: 100%; }
-  .file2 {
-    width: 90%; }
   /* PORTFOLIO*/
   .gallery-port {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     justify-content: space-between;
     margin-bottom: 40px;
-    margin-left: 70px; }
+    margin-left: 50px; }
     .gallery-port img {
       width: 100%;
       height: 100%; }
@@ -668,13 +718,47 @@ nav {
     width: auto;
     margin-bottom: 20px;
     margin-right: 20px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  /* RENT - HERE */
+  .rent-here {
+    width: 92%;
+    margin-left: 16px; }
+  .carousel-item .picture2-rent-here {
+    margin-left: 68px;
+    width: 200px;
+    height: 200px; } }
+
+/* REGISTER*/
+.registrar {
+  width: 70%;
+  padding: 0px; }
+
+.file2 {
+  width: 90%; }
 
 /* MEDIA QUERIES - LAPTOP */
 @media screen and (max-width: 900px) {
+  /* H1 - Portada*/
   header {
     background-position: center; }
-  /* ABOUT-US */
+  /* OUR - PRODUCTS */
+  .container-our-products2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container-our-products2 .container-text {
+    width: 90%; }
+  .container-our-products2 img {
+    margin-bottom: 25px; }
+  /* About Us*/
+  .img-about-us {
+    margin-left: 75px;
+    width: 80%;
+    height: 80%; }
+  .container-about-us .text-about-us {
+    margin-top: 150px;
+    font-size: 12px;
+    color: #626f8c; }
   .container-about-us2 {
     flex-direction: column;
     justify-content: center;
@@ -685,7 +769,8 @@ nav {
     margin-bottom: 25px; }
   /* PORTFOLIO*/
   .img-port {
-    width: 44%; }
+    width: 44%;
+    margin-left: 40px; }
   /* CLIENTS*/
   .cards {
     flex-direction: column;
@@ -706,8 +791,14 @@ nav {
   .service-ind:nth-child(1), .service-ind:nth-child(2) {
     margin-bottom: 40px; }
   .service-ind img {
-    width: 90%; }
-  /* FOOTER*/
+    width: 80%;
+    height: auto; }
+  .service-ind .pic2 {
+    width: 80%;
+    height: 80%; }
+  .service-ind .pic3 {
+    width: 80%;
+    height: 80%; }
   /* FOOTER */
   .container-footer {
     display: grid;
@@ -725,8 +816,19 @@ nav {
     width: auto;
     margin-bottom: 20px;
     margin-right: 20px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  .registrar {
+    width: 90%;
+    padding: 0px; } }
 
-.registrar {
-  width: 90%;
-  padding: 0px; }
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .rent-here {
+    width: 92%;
+    margin-left: 30px; }
+  .row .btn {
+    margin-left: 285px;
+    margin-bottom: 150px; }
+  .carousel-item .picture2-rent-here {
+    margin-left: 250px;
+    width: 200px;
+    height: 200px; } }
