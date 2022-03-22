@@ -771,14 +771,16 @@ margin-bottom: 25px;
 
 
 .gallery-port{
-margin: 0;
-width: 700px;
-height: 400px;
+display: grid;
+grid-template-columns: repeat(1, 50%);
+row-gap: 15px;
+align-items: center;
+margin-bottom: 40px;
+margin-right: 80px;
 
 .img-port{
-width: 50%;
-margin-right: 0px;
-margin-left: 30px;
+width: 100%;
+height: 100%;
 }
 }
 
